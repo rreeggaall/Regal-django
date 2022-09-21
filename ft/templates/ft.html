@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>FAKULTAS TEKNIK</h1>
+    <h2>terdiri dari :</h2>
+    <p>S1 Teknik Mesin;
+        S1 Teknik Elektro;
+        S1 Teknik Industri;
+        S1 Teknik Metalurgi;
+        S1 Teknik Kimia;
+        S1 Teknik Sipil</p>
+
+    {{title | upper}} <br>
+     {% for S1 in S1 %}
+        <li>{{S1}}</li>
+    {% endfor %}
+    
+{% endblock %}

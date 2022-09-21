@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+ 
+    <h1>FAKULTAS PERTANIAN</h1>
+    <h2>terdiri dari :</h2>
+    <p>S1 Agribisnis;
+        S1 Agroekoteknologi;
+        S1 Ilmu Perikanan;
+        S1 Teknologi Pangan.</p>
+
+        {{title | upper}} <br>
+        {% for S1 in S1 %}
+            <li>{{S1}}</li>
+         {% endfor %}
+    
+ {% endblock %}

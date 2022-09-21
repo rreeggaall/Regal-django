@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>FAKULTAS ILMU SOSIAL DAN ILMU POLITIK</h1>
+    <h2>terdiri dari :</h2>
+    <p>S1 Ilmu Komunikasi;
+        S1 Ilmu Pemerintahan;
+        S1 Administrasi Negara</p>
+
+     {{title | upper}} <br>
+     {% for S1 in S1 %}
+        <li>{{S1}}</li>
+    {% endfor %}
+    
+{% endblock %}

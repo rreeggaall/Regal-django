@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>PASCASARJANA</h1>
+    <h2>terdiri dari :</h2>
+    <p>S2 Pendidikan Bahasa Indonesia;
+        S2 Teknologi Penddikan;
+        S2 Hukum;
+        S2 Administrasi Publik;
+        S2 AKuntansi;
+        S2 Manajemen;
+        S2 Pendidikan Bahasa Inggris;
+        S2 Pendidikan Matematika;
+        S2 Ilmu Pertanian;
+        S2 Ilmu Komunikasi;
+        S2 Teknik Kimia;
+        S2 Pendidikan Dasar;
+        S2 Ekonomi;
+        S3 Program Studi Doktor Pendidikan;
+        S3 Program Studi Doktor Ilmu Akuntansi;
+        S3 Program Studi Doktor Ilmu Pertanian</p>
+
+        {{title | upper}} <br>
+        {% for S1 in S1 %}
+             <li>{{S1}}</li>
+        {% endfor %}
+    
+{% endblock %}

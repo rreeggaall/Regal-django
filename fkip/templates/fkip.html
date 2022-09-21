@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>FAKULTAS KEGURUAN DAN ILMU PENDIDIKAN</h1>
+    <h2>terdiri dari :</h2>
+    <p>S1 Pendidikan Matematika;
+        S1 Pendidikan Vokasional Teknik Mesin;
+        S1 Pendidikan Kimia, S1 Pendidikan Fisika;
+        S1 Pendidikan Biologi;
+        S1 Pendidikan Guru Sekolah Dasar;
+        S1 Pendidikan IPA;
+        S1 Pendidikan Seni Dan Pertunjukan;
+        S1 Pendidikan Khusus;
+        S1 Pendidikan Guru Pendidikan Anak Usia Dini;
+        S1 Pendidikan Sejarah, S1 Sosiologi;
+        S1 Pendidikan Vokasional Teknik Elektro;
+        S1 Pendidikan Non Formal;
+        S1 Bimbingan dan Konseling;
+        S1 Pendidikan Pancasila dan Kewarganegaraan;
+        S1 Pemndidikan Bahasa Indonesia;
+        S1 Pendidikan Bahasa Inggris</p>
+
+    {{title | upper}} <br>
+     {% for S1 in S1 %}
+        <li>{{S1}}</li>
+    {% endfor %}
+    
+{% endblock %}

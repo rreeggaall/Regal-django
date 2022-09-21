@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>FAKULTAS KEDOKTERAN</h1>
+    <h2>terdiri dari :</h2>
+    <p>S1 Pendidikan Dokter;
+        S1 Gizi;
+        S1 Keperawatan;
+        D3 Keperawatan;
+        S1 Ilmu Keolahragaan</p>
+
+    {title | upper}} <br>
+     {% for S1 in S1 %}
+        <li>{{S1}}</li>
+    {% endfor %}
+    
+{% endblock %}
